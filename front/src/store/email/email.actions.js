@@ -2,9 +2,9 @@ import { emailService } from "../../services/email.service"
 import { store } from "../store"
 import { ADD_EMAIL, REMOVE_EMAIL, SET_EMAILS, SET_FILTER_BY, UPDATE_EMAIL } from "./email.reducer"
 
-export async function loadEmails() {
+export async function loadEmails(filterBy) {
     try {
-        const emails = await emailService.query(store.getState().emailModule.filterBy)
+        const emails = await emailService.query(filterBy)
         store.dispatch({ type: SET_EMAILS, emails })
     } catch (err) {
         console.log(err)

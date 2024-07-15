@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom'
 import hero from '../assets/imgs/animation.mp4'
+import AppHeader from '../cmps/app-header'
 
 export default function HomePage() {
 
 
     return (
         <section className="home-page main-layout">
+            <AppHeader />
             <div className="hero main-layout full">
                 <video className='full' autoPlay muted loop playsInline>
                     <source src={hero} type="video/mp4" />

@@ -5,8 +5,10 @@ async function getEmails(req, res) {
     try {
         logger.debug('Fetching emails')
         const filterBy = {
-            subject: req.body.subject || ''
+            subject: req.query.subject || '',
+            status: req.query.status || ''
         }
+        console.log(req.query)
         const emails = await emailService.query(filterBy)
         res.json(emails)
     } catch (err) {

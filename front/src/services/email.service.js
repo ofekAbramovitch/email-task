@@ -44,5 +44,6 @@ function getEmptyEmail() {
 function getEmptyFilterBy() {
     return {
         subject: "",
+        status: ""
     }
 }

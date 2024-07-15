@@ -1,0 +1,48 @@
+.email-preview {
+    display: flex;
+    border-bottom: 1px solid $bg-clr-primary;
+    background-color: $bg-clr-email-prev;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0.5rem;
+
+    &:hover {
+        background-color: darken($bg-clr-email-prev, 5%);
+    }
+    
+    h2, p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .text {
+        width: 400px;
+    }
+
+    .subject {
+        font-size: 1.2rem;
+    }
+
+    .sender-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid $bg-clr-primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6rem;
+        color: $bg-clr-primary;
+    }
+
+    .time {
+        justify-self: flex-end;
+    }
+}
+
+li.active .email-preview {
+    background-color: darken($bg-clr-email-prev, 5%);
+}

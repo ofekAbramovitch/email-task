@@ -63,6 +63,7 @@ async function update(email) {
 function _buildCriteria(filterBy) {
     const criteria = {}
     if (filterBy.subject) criteria.subject = { $regex: filterBy.subject, $options: 'i' }
+    if (filterBy.status) criteria.status = filterBy.status
     return criteria
 }
 
