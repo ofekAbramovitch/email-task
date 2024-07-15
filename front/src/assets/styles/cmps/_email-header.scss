@@ -4,14 +4,39 @@
     padding: 1.5rem;
     font-family: "Space Grotesk", sans-serif;
     display: flex;
-    gap: 1rem;
-    align-items: center;
+    justify-content: space-between;
 
-    .logo-icon {
-        font-size: 3rem;
+    .links {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        .logo-icon {
+            font-size: 3rem;
+        }
+
+        a:not(:first-of-type) {
+            display: flex;
+            background-color: $bg-clr-email-prev;
+            padding: 0.8rem;
+            align-items: center;
+            gap: 0.4rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s;
+            font-size: 1.2rem;
+
+            &:hover {
+                background-color: darken($bg-clr-email-prev, 5%);
+            }
+
+            &.active {
+                background-color: darken($bg-clr-email-prev, 8%);
+            }
+        }
     }
 
-    a:not(:first-of-type) {
+    .new-email {
+        color: white;
         display: flex;
         background-color: $bg-clr-email-prev;
         padding: 0.8rem;
@@ -20,13 +45,10 @@
         border-radius: 0.5rem;
         transition: background-color 0.3s;
         font-size: 1.2rem;
+        border: none;
 
         &:hover {
             background-color: darken($bg-clr-email-prev, 5%);
-        }
-
-        &.active {
-            background-color: darken($bg-clr-email-prev, 8%);
         }
     }
 }
