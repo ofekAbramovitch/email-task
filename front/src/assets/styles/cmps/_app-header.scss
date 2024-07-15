@@ -1,0 +1,18 @@
+.app-header {
+    color: white;
+    background-color: $bg-clr-header;
+    padding: 1.5rem 0;
+    font-family: "Space Grotesk", sans-serif;
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        font-size: 1.5rem;
+        width: fit-content;
+
+        .logo-icon {
+            font-size: 3rem;
+        }
+    }
+}
