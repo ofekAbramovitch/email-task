@@ -51,4 +51,22 @@
             background-color: darken($bg-clr-email-prev, 5%);
         }
     }
+    
+}
+
+.send-btn {
+    color: white;
+    display: flex;
+    background-color: $bg-clr-email-prev;
+    padding: 0.8rem;
+    align-items: center;
+    gap: 0.4rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+    font-size: 1.2rem;
+    border: none;
+
+    &:hover {
+        background-color: darken($bg-clr-email-prev, 5%);
+    }
 }

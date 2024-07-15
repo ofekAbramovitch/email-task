@@ -46,7 +46,7 @@ export default function EmailIndex() {
             <EmailHeader />
             <section className="email-index">
                 <EmailList emails={emails} onSelectEmail={setSelectedEmail} />
-                <EmailDetails email={selectedEmail} />
+                {selectedEmail._id && <EmailDetails email={selectedEmail} />}
             </section>
         </>
     )

@@ -6,8 +6,9 @@ export default function EmailDetails({ email }) {
         year: 'numeric',
         month: 'long',
         day: 'numeric',
-        hour: 'numeric',
-        minute: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: true
     })
 
     return (

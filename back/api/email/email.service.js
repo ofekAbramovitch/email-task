@@ -1,3 +1,4 @@
+const asyncLocalStorage = require('../../services/als.service')
 const dbService = require('../../services/db.service')
 const logger = require('../../services/logger.service')
 const ObjectId = require('mongodb').ObjectId
@@ -6,7 +7,7 @@ async function query(filterBy) {
     try {
         const criteria = _buildCriteria(filterBy)
         const collection = await dbService.getCollection('email')
-        var emails = await collection.find(criteria).sort({ subject: 1 }).toArray()
+        var emails = await collection.find(criteria).sort({ sentAt: -1 }).toArray()
         return emails
     } catch (err) {
         logger.error('cannot find emails', err)
@@ -38,9 +39,20 @@ async function remove(emailId) {
 
 async function add(email) {
     try {
+        const { loggedinUser } = asyncLocalStorage.getStore()
+        const emailToAdd = {
+            from: loggedinUser.email,
+            fromName: `${loggedinUser.firstName} ${loggedinUser.lastName}`,
+            to: email.to,
+            subject: email.subject,
+            body: email.body,
+            isRead: false,
+            status: 'sent',
+            sentAt: Date.now()
+        }
         const collection = await dbService.getCollection('email')
-        await collection.insertOne(email)
-        return email
+        await collection.insertOne(emailToAdd)
+        return emailToAdd
     } catch (err) {
         logger.error('cannot insert email', err)
         throw err

@@ -39,7 +39,7 @@ async function signup({ firstName, lastName, email, password }) {
 }
 
 function getLoginToken(user) {
-    const userInfo = { _id: user._id, email: user.email }
+    const userInfo = { _id: user._id, email: user.email, firstName: user.firstName, lastName: user.lastName }
     return cryptr.encrypt(JSON.stringify(userInfo))
 }
 

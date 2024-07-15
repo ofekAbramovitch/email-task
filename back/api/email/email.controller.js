@@ -8,7 +8,6 @@ async function getEmails(req, res) {
             subject: req.query.subject || '',
             status: req.query.status || ''
         }
-        console.log(req.query)
         const emails = await emailService.query(filterBy)
         res.json(emails)
     } catch (err) {

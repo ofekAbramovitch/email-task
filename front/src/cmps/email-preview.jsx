@@ -2,9 +2,10 @@
 import { utilService } from "../services/util.service"
 
 export default function EmailPreview({ email }) {
-    const sentDate = new Date(email.sentAt);
-    const hour = sentDate.getHours()
-    const minutes = sentDate.getMinutes().toString().padStart(2, '0');
+    const sentDate = new Date(email.sentAt)
+    let hour = sentDate.getHours()
+    let minutes = sentDate.getMinutes().toString().padStart(2, '0')
+    hour = hour.toString().padStart(2, '0')
 
     function getInitials(name) {
         return name.split(' ').map(word => word[0]).join('').toUpperCase()
