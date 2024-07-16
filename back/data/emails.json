@@ -1,0 +1,292 @@
+[
+    {
+        "from": "service@example.com",
+        "fromName": "Customer Service",
+        "to": "jane.smith@example.com",
+        "subject": "Your Inquiry",
+        "body": "We're happy to assist with your inquiry.",
+        "isRead": false,
+        "status": "draft",
+        "sentAt": 1689492689000
+    },
+    {
+        "from": "alerts@example.com",
+        "fromName": "Alerts",
+        "to": "jane.smith@example.com",
+        "subject": "Security Alert",
+        "body": "Please review your security settings.",
+        "isRead": false,
+        "status": "sent",
+        "sentAt": 1689452689000
+    },
+    {
+        "from": "team@example.com",
+        "fromName": "The Team",
+        "to": "jane.smith@example.com",
+        "subject": "Project Update",
+        "body": "Here's the latest update on the project.",
+        "isRead": true,
+        "status": "sent",
+        "sentAt": 1689452689000
+    },
+    {
+        "fromName": "Jane Doe",
+        "from": "jane.doe@example.com",
+        "to": "johndoe@example.com",
+        "subject": "Meeting Rescheduled",
+        "body": "Dear John, I hope this message finds you well. I wanted to inform you that due to unforeseen circumstances, our meeting originally scheduled for this Wednesday has been rescheduled to next Friday at 10 AM. I apologize for any inconvenience this may cause and hope the new time works for you. Please let me know if you have any conflicts with the rescheduled time. Looking forward to our meeting. Best regards, Jane.",
+        "isRead": false,
+        "sentAt": 1689452689000,
+        "status": "sent"
+    },
+    {
+        "fromName": "Acme Corp",
+        "from": "support@acmecorp.com",
+        "to": "johndoe@example.com",
+        "subject": "Your Order Has Shipped",
+        "body": "Dear John, We are excited to inform you that your order #12345 has been successfully processed and shipped. Your package is on its way and should arrive at your doorstep within the next 3-5 business days. You can track your package's progress online using the tracking number provided in your shipping confirmation email. We hope you are looking forward to receiving your order as much as we enjoyed preparing it for you. Thank you for choosing Acme Corp. Best regards, The Acme Corp Support Team.",
+        "isRead": true,
+        "sentAt": 1689452689000,
+        "status": "sent"
+    },
+    {
+        "fromName": "Alice Johnson",
+        "from": "alice.j@example.com",
+        "to": "johndoe@example.com",
+        "subject": "Welcome to Our Newsletter",
+        "body": "Hi John, We're thrilled to have you on board! Our newsletter will keep you updated with the latest news, tips, and insights. Stay tuned for our upcoming editions. Best, Alice",
+        "isRead": false,
+        "sentAt": 1689452689000,
+        "status": "inbox"
+    },
+    {
+        "fromName": "Bob Smith",
+        "from": "bob.s@example.com",
+        "to": "johndoe@example.com",
+        "subject": "Project Update",
+        "body": "Dear John, I wanted to give you a quick update on the project. We're making great progress and are on track to meet our deadline. I'll share a detailed report by next week. Regards, Bob",
+        "isRead": true,
+        "sentAt": 1689452689000,
+        "status": "inbox"
+    },
+    {
+        "fromName": "Clara Oswald",
+        "from": "clara.o@example.com",
+        "to": "johndoe@example.com",
+        "subject": "Invitation to Speak",
+        "body": "Hello John, We would be honored if you could speak at our upcoming conference on technology and innovation. Your expertise would greatly benefit our audience. Please let us know if you're interested. Best, Clara",
+        "isRead": false,
+        "sentAt": 1689452689000,
+        "status": "inbox"
+    },
+    {
+        "fromName": "David Tennant",
+        "from": "david.t@example.com",
+        "to": "johndoe@example.com",
+        "subject": "New Collaboration Opportunity",
+        "body": "Hi John, I came across your profile and am impressed with your work. I believe there's a great opportunity for us to collaborate on a new project. Looking forward to discussing this with you. Cheers, David",
+        "isRead": true,
+        "sentAt": 1689952689000,
+        "status": "inbox"
+    },
+    {
+        "fromName": "Eleanor Shellstrop",
+        "from": "eleanor.s@example.com",
+        "to": "johndoe@example.com",
+        "subject": "Thank You Note",
+        "body": "John, I just wanted to express my heartfelt thanks for your help last week. Your guidance was invaluable, and I truly appreciate it. Thank you once again. Warmly, Eleanor",
+        "isRead": false,
+        "sentAt": 1689492689000,
+        "status": "inbox"
+    },
+    {
+        "fromName": "Fiona Gallagher",
+        "from": "fiona.g@example.com",
+        "to": "johndoe@example.com",
+        "subject": "Urgent: Meeting Rescheduled",
+        "body": "John, Due to a last-minute conflict, I have to reschedule our meeting. Can we make it the same time next week? Please let me know if that works for you. Sorry for any inconvenience. Best, Fiona",
+        "isRead": true,
+        "sentAt": 1689452989000,
+        "status": "inbox"
+    },
+    {
+        "fromName": "Alice Johnson",
+        "from": "alice.j@example.com",
+        "to": "johndoe@example.com",
+        "subject": "Follow-up on Our Meeting",
+        "body": "Hi John, I just wanted to follow up on our last meeting and see if you had any further questions or thoughts. Looking forward to hearing from you. Best, Alice",
+        "isRead": false,
+        "sentAt": 1689492689000,
+        "status": "sent"
+    },
+    {
+        "fromName": "Bob Smith",
+        "from": "bob.s@example.com",
+        "to": "johndoe@example.com",
+        "subject": "Updated Proposal Documents",
+        "body": "Dear John, I've attached the updated proposal documents as discussed. Please review them at your earliest convenience and let me know if there are any changes needed. Regards, Bob",
+        "isRead": true,
+        "sentAt": 1699452689000,
+        "status": "sent"
+    },
+    {
+        "fromName": "Clara Oswald",
+        "from": "clara.o@example.com",
+        "to": "johndoe@example.com",
+        "subject": "Conference Details",
+        "body": "Hello John, Here are the details for the upcoming conference. I've included the schedule and a list of speakers. Let me know if you need further information. Best, Clara",
+        "isRead": false,
+        "sentAt": 1680452689000,
+        "status": "sent"
+    },
+    {
+        "fromName": "David Tennant",
+        "from": "david.t@example.com",
+        "to": "johndoe@example.com",
+        "subject": "Project Brainstorming Session",
+        "body": "Hi John, I'm organizing a brainstorming session for our project next week. Your insights would be invaluable. Please let me know if you can make it. Cheers, David",
+        "isRead": true,
+        "sentAt": 1689452689000,
+        "status": "sent"
+    },
+    {
+        "fromName": "Eleanor Shellstrop",
+        "from": "eleanor.s@example.com",
+        "to": "johndoe@example.com",
+        "subject": "Reminder: Workshop Next Week",
+        "body": "John, Just a reminder about the workshop next week. I hope you can still make it. Let me know if there's anything you need from me before then. Warmly, Eleanor",
+        "isRead": false,
+        "sentAt": 1689452689000,
+        "status": "sent"
+    },
+    {
+        "fromName": "George Lucas",
+        "from": "george.l@example.com",
+        "to": "johndoe@example.com",
+        "subject": "New Script Ideas",
+        "body": "John, I've been brainstorming some new script ideas and would love to get your feedback. Let's schedule a time to discuss. Best, George",
+        "isRead": false,
+        "sentAt": 1689452689000,
+        "status": "draft"
+    },
+    {
+        "fromName": "Hannah Abbott",
+        "from": "hannah.a@example.com",
+        "to": "johndoe@example.com",
+        "subject": "Event Planning Committee",
+        "body": "Dear John, Would you be interested in joining the event planning committee for our upcoming charity event? Your expertise would be greatly appreciated. Regards, Hannah",
+        "isRead": true,
+        "sentAt": 1689452689000,
+        "status": "draft"
+    },
+    {
+        "fromName": "Ian Malcolm",
+        "from": "ian.m@example.com",
+        "to": "johndoe@example.com",
+        "subject": "Research Collaboration Inquiry",
+        "body": "Hello John, I'm reaching out to inquire about potential collaboration on a research project I'm initiating. Your background in the field would be invaluable. Best, Ian",
+        "isRead": false,
+        "sentAt": 1689452689000,
+        "status": "draft"
+    },
+    {
+        "fromName": "Jenna Coleman",
+        "from": "jenna.c@example.com",
+        "to": "johndoe@example.com",
+        "subject": "Book Club Invitation",
+        "body": "Hi John, I'm starting a book club with a few friends and thought you might be interested in joining us. Let me know if you're interested. Cheers, Jenna",
+        "isRead": true,
+        "sentAt": 1689452689000,
+        "status": "draft"
+    },
+    {
+        "fromName": "Kara Thrace",
+        "from": "kara.t@example.com",
+        "to": "johndoe@example.com",
+        "subject": "Pilot Training Program",
+        "body": "John, I'm putting together a pilot training program and would love to have you as a guest speaker. Your experience would be incredibly beneficial to our trainees. Warmly, Kara",
+        "isRead": false,
+        "sentAt": 1689452689000,
+        "status": "draft"
+    },
+    {
+        "fromName": "Lando Calrissian",
+        "from": "lando.c@example.com",
+        "to": "johndoe@example.com",
+        "subject": "Business Opportunity",
+        "body": "John, I've come across a business opportunity that I think could be of mutual benefit. Let's meet to discuss further. Best, Lando",
+        "isRead": true,
+        "sentAt": 1689452689000,
+        "status": "draft"
+    },
+    {
+        "fromName": "Mina Harker",
+        "from": "mina.h@example.com",
+        "to": "johndoe@example.com",
+        "subject": "Literature Conference",
+        "body": "Dear John, I'm organizing a literature conference and would be honored if you could participate as a speaker. Your insights would greatly enrich our discussions. Regards, Mina",
+        "isRead": false,
+        "sentAt": 1689452689000,
+        "status": "draft"
+    },
+    {
+        "fromName": "Nina Zenik",
+        "from": "nina.z@example.com",
+        "to": "johndoe@example.com",
+        "subject": "Culinary Workshop",
+        "body": "Hello John, I'm hosting a culinary workshop next month and thought you might be interested in attending. It's going to be a fun and informative session. Best, Nina",
+        "isRead": true,
+        "sentAt": 1689452689000,
+        "status": "draft"
+    },
+    {
+        "fromName": "Owen Grady",
+        "from": "owen.g@example.com",
+        "to": "johndoe@example.com",
+        "subject": "Conservation Efforts Meeting",
+        "body": "John, I'm reaching out to discuss our ongoing conservation efforts and how you can contribute. Your expertise would be invaluable to our cause. Looking forward to your input. Regards, Owen",
+        "isRead": false,
+        "sentAt": 1689452689000,
+        "status": "draft"
+    },
+    {
+        "from": "test@gmail.com",
+        "fromName": "test user",
+        "to": "sdfsf@sdds.com",
+        "subject": "",
+        "body": "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+        "isRead": false,
+        "status": "sent",
+        "sentAt": 1721074790950.0
+    },
+    {
+        "from": "test@gmail.com",
+        "fromName": "test user",
+        "to": "sdfsf@sdds.com",
+        "subject": "sdsdf",
+        "body": "sdfsdfsdfsdfsdf",
+        "isRead": false,
+        "status": "sent",
+        "sentAt": 1721075043178.0
+    },
+    {
+        "from": "test@gmail.com",
+        "fromName": "test user",
+        "to": "sdfsf@sdds.com",
+        "subject": "dfdfgdfg",
+        "body": "dfggggggggggggggggggggggggggggggggggggggggggggggggggggggggggd",
+        "isRead": false,
+        "status": "sent",
+        "sentAt": 1721076621750.0
+    },
+    {
+        "from": "test@gmail.com",
+        "fromName": "test user",
+        "to": "sdf",
+        "subject": "",
+        "body": "",
+        "isRead": false,
+        "status": "sent",
+        "sentAt": 1721106938170.0
+    }
+]
