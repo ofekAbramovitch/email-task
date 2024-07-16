@@ -67,6 +67,7 @@ export default function EmailHeader() {
                     <button className="send-btn" onClick={onSendEmail}>Send <SendIcon /></button>
                     <TextField
                         label="To"
+                        type="email"
                         variant="outlined"
                         fullWidth
                         margin="normal"
